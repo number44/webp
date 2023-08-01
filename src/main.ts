@@ -98,6 +98,9 @@ async function resizeImage(buffer: ArrayBuffer): Promise<ArrayBuffer> {
       canvas.height = newHeight;
       if (!ctx) return;
       // Draw the image on the canvas with the new dimensions
+      ctx.rect(0, 0, newWidth, newHeight);
+      ctx.fillStyle = "#fff";
+      ctx.fill();
       ctx.drawImage(img, 0, 0, newWidth, newHeight);
 
       // Get the resized image as a data URL and convert it back to an ArrayBuffer
