@@ -17,10 +17,14 @@ function scrolling(sp: number) {
   } else {
     headerElement.classList.remove("scrolled");
   }
-  if (scrolled > 5 && goToDpcument) {
-    goToDpcument.classList.add("show-go-to");
+  if (scrolled > 5) {
+    if (goToDpcument) {
+      goToDpcument.classList.add("show-go-to");
+    }
   } else {
-    goToDpcument.classList.remove("show-go-to");
+    if (goToDpcument) {
+      goToDpcument.classList.remove("show-go-to");
+    }
   }
 }
 detectScroll(scrolling, 40);

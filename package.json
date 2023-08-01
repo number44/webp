@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "animejs": "^3.2.1",
+    "jszip": "^3.10.1",
     "webp-converter-browser": "^1.0.4"
   }
 }

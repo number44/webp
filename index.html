@@ -87,6 +87,7 @@
               >Wybierz Zdjęcie
               <input
                 class="input"
+                multiple
                 title="zdjęcie"
                 type="file"
                 name="file-upload"
@@ -95,12 +96,12 @@
             </label>
           </div>
           <div class="right">
-            <figure class="">
-              <img id="outputImage" class="img image" src="domki.jpg" alt="" />
-            </figure>
-            <a href="" download class="buton-download btn-primary btn d-none"
-              >Pobierz</a
-            >
+            <div class="images-container">
+              <figure class=""></figure>
+            </div>
+            <button class="buton-download btn-primary btn d-none">
+              Pobierz
+            </button>
           </div>
         </div>
       </section>
